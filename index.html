@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Form</title>
+    <style>
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   body{
+    background-color: rgb(27, 27, 27);
+   }
+   .containrt{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 45%;
+    column-gap: 54px;
+    background-color:#333;
+    color: aliceblue;
+    margin: 66px;
+    padding: 12px;
+    box-shadow: 0 6px 12px rgba(3, 228, 179, 0.603);
+    width: 50vw;
+   }
+   label{
+    background-color: #444242;
+    box-shadow: 3px 4px 6px rgba(5, 165, 130, 0.548);
+   }
+   h2{
+    margin: 56px;
+    color: aliceblue;
+    box-shadow:0 7px 8px rgba(5, 165, 130, 0.548) ;
+   }
+   button :hover{
+    background-color:rgb(204, 53, 53);
+    border: 3px solid rgba(5, 165, 130, 0.548) ;
+   }
+
+
+    </style>
+</head>
+<body>
+    <h2> <center>Traviling form</center></h2>
+    <div class="containrt">
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"placeholder="Enter name here" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="What will be your plans" required></textarea><br><br>
+        
+        <button>
+        <input type="submit" value="Submit">
+    </button>
+    </form>
+</div>
+</body>
+</html>
